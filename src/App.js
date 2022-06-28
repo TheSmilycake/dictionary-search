@@ -4,7 +4,7 @@ import Dictionary from "./Dictionary";
 function App() {
   return (
     <div className="App">
-      <span>{"<3"}</span>
+      <h1>Dictionary App</h1>
         <Dictionary/>
         <footer><a href="https://github.com/TheSmilycake/dictionary-search">GitHub</a></footer>
     </div>
