@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from "axios";
 
-import Meanings from "./Meanings";
+import Meaning from "./Meaning";
 
 export default function Dictionary(props) {
     const [searchText, setSearchText] = useState("heart");
@@ -38,7 +38,9 @@ export default function Dictionary(props) {
             <div>
                 <h2>{wordData.word}  {wordData.phonetic}</h2>
             </div>
-            <Meanings meanings={wordData.meanings}/>
+            {wordData.meanings.map((meaning, index) => {
+                return <Meaning key={index} meaning={meaning}/>;
+            })}
         </div>);
     } else {
         apiCall();
