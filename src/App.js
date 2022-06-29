@@ -4,9 +4,10 @@ import Dictionary from "./Dictionary";
 function App() {
   return (
     <div className="App">
+      <header><a href="https://github.com/TheSmilycake/dictionary-search">GitHub</a></header>
       <h1>Dictionary App</h1>
         <Dictionary/>
-        <footer><a href="https://github.com/TheSmilycake/dictionary-search">GitHub</a></footer>
+        <footer></footer>
     </div>
   );
 }
