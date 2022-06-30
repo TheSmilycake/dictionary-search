@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from "axios";
 
 import Meaning from "./Meaning";
+import Phonetics from "./Phonetics";
 
 export default function Dictionary(props) {
     const [searchText, setSearchText] = useState("heart");
@@ -25,6 +26,7 @@ export default function Dictionary(props) {
            ready: true,
            word: response.data[0].word,
            phonetic: response.data[0].phonetic,
+           phonetics: response.data[0].phonetics,
            meanings: response.data[0].meanings
        });
 
@@ -38,6 +40,7 @@ export default function Dictionary(props) {
             <div>
                 <h2>{wordData.word}  {wordData.phonetic}</h2>
             </div>
+            <Phonetics phonetics={wordData.phonetics}/>
             {wordData.meanings.map((meaning, index) => {
                 return <Meaning key={index} meaning={meaning}/>;
             })}
