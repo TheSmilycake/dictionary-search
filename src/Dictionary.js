@@ -37,6 +37,7 @@ export default function Dictionary(props) {
                 <input type='text' placeholder='Type word...' onChange={updateSearch}/>
                 <input type={'submit'} value={'Search'}/>
             </form>
+            <hr/>
             <div>
                 <h2>{wordData.word}  {wordData.phonetic}</h2>
             </div>

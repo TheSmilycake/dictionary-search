@@ -1,58 +1,54 @@
+h1, h2, h3 {
+  margin-top: 0;
+}
 .App {
+  box-sizing: border-box;
   text-align: left;
-  max-width: 1000px;
-  margin: 40px auto 0;
+  padding: 10px;
+  max-width: 800px;
+  margin: 20px auto 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a.audio {
+  margin-left: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Meaning h2 {
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Definitions {
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.meaning {
-  text-align: left;
-}
-
-/*.synonym, .antonym {*/
-/*  display: block;*/
-/*  margin: 50px;*/
-/*}*/
-.Meaning {
-  background-color: rgba(134, 245, 225, 0.4);
-}
 .definition {
-  margin: 10px;
-  background-color: rgba(213, 234, 241, 0.35);
+  margin-top: 10px;
 }
 
+.definition hr {
+  width: 70%;
+  border-color: #d7d7d7;
+}
 
+.Collapsible__trigger {
+  text-align: center;
+  width: 200px;
+  display: inline-block;
+  text-decoration: underline;
+  color: white;
+  background-color: #606060;
+  border: #606060 1px solid;
+  padding-bottom: 4px;
+}
+
+.Collapsible__trigger:hover {
+ font-weight: bold;
+}
+
+.Collapsible__contentInner {
+  border: #606060 1px solid;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}

@@ -8,6 +8,7 @@ export default function Meaning(props) {
     return (
         <div className="Meaning">
             <h2>{props.meaning.partOfSpeech}</h2>
+            <hr className="meaning-hr"/>
             <strong>Definition:</strong><br/>{props.meaning.definitions[0].definition}
             <Synonyms synonyms={props.meaning.synonyms} classString='bg-green'/>
             <Antonyms antonyms={props.meaning.antonyms} classString='bg-red'/>
