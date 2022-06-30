@@ -52,3 +52,43 @@ a.audio {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.Photos {
+  margin-top: 20px;
+}
+.Gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pexels-photo {
+  flex-basis: 33.33%;
+}
+
+.pexels-photo a img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 650px) {
+  .pexels-photo {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  .pexels-photo {
+    flex-basis: 100%;
+  }
+}
+
+.pexels-photo-info {
+  padding-top: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #606060;
+}
+
+a {
+  color: rgba(31, 68, 79, 0.65);
+  font-weight: 500;
+}
