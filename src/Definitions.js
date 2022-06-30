@@ -5,8 +5,6 @@ import Example from "./Example";
 import Collapsible from 'react-collapsible';
 
 export default function Definitions(props) {
-
-    const triggerStyle = {backgroundColor: 'red'};
     return (
         <div className="Definitions">
             <Collapsible transitionTime={300}  trigger="More Definitions">
